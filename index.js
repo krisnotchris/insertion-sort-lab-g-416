@@ -10,8 +10,9 @@ function findMinAndRemove(array){
 }
 
 function insertionSort(array){
-  if (array.length < 2) {
-    
+  let removed = [];
+  while (array.length > 0) {
+    removed.push(findMinAndRemove(array))
   }
-  findMinAndRemove(array);
+  return removed;
 }
