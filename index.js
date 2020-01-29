@@ -10,5 +10,8 @@ function findMinAndRemove(array){
 }
 
 function insertionSort(array){
+  if (array.length < 2) {
+    
+  }
   findMinAndRemove(array);
 }
